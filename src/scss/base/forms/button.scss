@@ -29,4 +29,10 @@
   &._fw {
     width: 100%;
   }
+  @media (max-width: $tablet) {
+    padding: rem(15) rem(20);
+    &_border {
+      padding: rem(14) rem(20);
+    }
+  }
 }

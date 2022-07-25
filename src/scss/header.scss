@@ -8,6 +8,10 @@
   }
 
   &__logo {
+    @include adaptiveValue('width', 143, 120, 1620, 768, 1);
+    img {
+      max-width: 100%;
+    }
   }
 
   &__menu {
@@ -23,6 +27,7 @@
   }
 }
 .menu {
+  padding: 0 rem(10);
   &__icon {
   }
 
@@ -31,9 +36,12 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: rem(44);
+    row-gap: rem(15);
+    column-gap: rem(44);
+    @include adaptiveValue('column-gap', 44, 15);
   }
 
   &__item {
