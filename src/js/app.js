@@ -180,7 +180,7 @@ flsScroll.headerScroll()
 // Модуль паралаксу
 // Документация:
 // Сниппет(HTML):
-// import './libs/parallax.js'
+import './libs/parallax.js'
 
 // Модуль анімація цифрового лічильника
 // Документация:

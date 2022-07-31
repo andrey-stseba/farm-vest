@@ -5,7 +5,7 @@
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
-        <section class="page__main main-block">
+        <section data-prlx-parent class="page__main main-block">
           <div class="main-block__container-big">
             <div class="main-block__container">
               <div class="main-block__content">
@@ -36,7 +36,12 @@
                   </form>
                 </div>
               </div>
-              <div class="main-block__icons icons-main-block">
+              <div
+                data-prlx
+                data-direction="1"
+                data-coefficient="100"
+                class="main-block__icons icons-main-block"
+              >
                 <div
                   data-prlx-mouse
                   data-prlx-cx="300"

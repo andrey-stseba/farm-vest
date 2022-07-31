@@ -43,12 +43,13 @@
   &__icons {
   }
 }
-.title {
-}
 
-.button {
-}
 .icons-main-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   pointer-events: none;
   @media (max-width: $mobile) {
     opacity: 0.2;
@@ -120,15 +121,25 @@
   }
 }
 //  partners ============================================================================
-.page {
-  &__partners {
-  }
-}
+
 .partners {
+  @include adaptiveValue('padding-bottom', 200, 30);
   &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(25);
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: em(1100)) {
+      justify-content: center;
+    }
   }
 
   &__item {
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
